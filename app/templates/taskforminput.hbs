@@ -1,0 +1,41 @@
+  <h2 class="task-header">Create A Task</h2>
+
+    <!--
+    <ul class="post-publish">
+        <li>
+            {{input value=number placeholder="Number"}}
+            {{input value=title placeholder="Title"}}
+        </li>
+        <li>
+            {{input value=date placeholder="Date"}}
+            {{textarea value=body placeholder="Body"}}
+
+        </li>
+        <li>
+            <button {{action 'publishTask'}}>Publish</button>
+        </li>
+    </ul>
+    -->
+
+    <form class="effect2">
+      <div class="form-group">
+          <label for="task number"> Task Number: </label>
+          {{input value=number placeholder="Number" class="form-control"}}
+      </div>
+
+        <div class="form-group">
+            <label for="task title">Task Title:</label>
+                {{input value=title placeholder="Title" class="form-control"}}
+        </div>
+        <div class="form-group">
+            <label for="date">Finish Date:</label>
+                 {{input value=date placeholder="(mm/dd/yyyy)" class="form-control"}}
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Task Description:</label>
+            {{textarea class="form-control" value=body placeholder="Task Description Here.." row="4"}}
+        </div>
+
+
+        <button type="submit" class="btn btn-primary"{{action 'publishTask'}}>Submit</button>
+    </form>

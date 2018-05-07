@@ -1,0 +1,20 @@
+
+
+<div class="miles-row">
+  {{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp pull-right'}}
+    {{#each model key ="userId" as |taskforminput|}}
+      <div>
+          <div class="dropdown-toggle clickable">
+            <div class="task-object-title"> Task {{taskforminput.number}}:  </div>
+           </div>
+          <div class="dropdown-details hide">
+             <div class="task-body-text">
+                <div><b> Title:</b> {{taskforminput.title}} </div>
+               <div><b>Finish Date: </b>{{taskforminput.date}}</div>
+               <div><b>Task Description:</b> {{taskforminput.body}}</div>
+             </div>
+         </div>
+      </div>
+     {{/each}}
+  {{/easy-dropdown}}
+  </div>

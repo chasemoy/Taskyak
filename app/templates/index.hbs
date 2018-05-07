@@ -1,0 +1,36 @@
+<body>
+
+<nav class = "navbar navbar-dark navbar-expand-md fixed-top">
+	<div class = "container"> 
+		{{#link-to 'index' class = "navbar-brand"}}
+			Student Tracker 
+		{{/link-to}} 
+		
+		<button class = "navbar-toggler" type = "button"
+		data-toggle = "collapse" data-target = "#myTogglerNav"
+		aria-controls = "myTogglerNav"
+		aria-expanded = "false" aria-label = "Toggle navigation">
+		<div class = "navbar-toggler-icon"></div>
+		</button>
+		
+		<div class = "collapse navbar-collapse" id = "myTogglerNav">
+			<div class = "navbar-nav ml-auto">
+				{{#link-to 'signin' class = "nav-item active indexNavLinks"}} <i class = "fa fa-arrow-circle-right"></i> 
+					Login  
+				{{/link-to}} 
+				{{#link-to 'register' class = "nav-item active indexNavLinks"}} <i class="fa fa-address-book-o"></i> 
+					Sign Up 
+				{{/link-to}} 
+			</div>
+		</div>
+	</div>
+</nav>  
+
+<div id = "background" >
+	<div class="container text-center" id = "imageText">
+		<h6 class = "lead">Life may not be perfect, but your schedule can be.</h6>
+		{{#link-to 'register' id="imageLink"}} Sign up today! {{/link-to}}     
+    </div>
+</div>	  
+
+</body>

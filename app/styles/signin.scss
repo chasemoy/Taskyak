@@ -1,0 +1,34 @@
+	
+	.container a {
+		color: white;
+	}
+
+	#signInForm {
+		width: 70%;
+		padding-top: 100px;
+		margin: 0 auto;
+	}	
+	
+	.btn-primary, .btn-primary:active, .btn-primary:visited {
+		background-color: white; 
+		color: #555555; 
+		border: 2px solid #555555;
+		font-size: 20px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		margin: 0 auto;
+		display: flex;
+	}
+	
+	.btn-primary:hover {
+		background-color: #555555;
+		color: white;
+		border: 2px solid #555555;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		#signInForm {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}	

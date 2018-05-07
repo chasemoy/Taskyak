@@ -1,0 +1,50 @@
+<body>
+
+	<nav class = "navbar navbar-dark navbar-expand-md fixed-top registerNav">
+		{{#link-to 'index' class = "nav-item registerNavButton"}}
+			Student Tracker 
+		{{/link-to}} 
+	</nav>
+	
+	<div class = "container">
+		<form id = "registerForm">
+			<legend style = "text-align: center; color: #555555;"> Register </legend> 
+			<hr>
+			
+			<div class="form-group">
+				<label for="exampleInputName1">First name</label>
+				{{input type="text" value=firstName class="form-control" autofocus="autofocus" placeholder="Enter first name"}}
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputName2">Last name</label>
+				{{input type="text" value=lastName class="form-control" autofocus="autofocus" placeholder="Enter last name"}}
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				{{input type="email" value=email class="form-control"  autofocus="autofocus" placeholder="Enter email"}}
+			</div>
+				
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				{{input type="password" value=password class="form-control" autofocus="autofocus" placeholder="Enter password"}}
+			</div>
+		
+			<button id="register" {{action 'registerToDB'}}>
+				Register
+			</button>
+			
+			<small id="emailHelp" class="form-text text-muted" style = "text-align: center;">
+				Unlike Facebook, we won't share your information 
+				<i class="fa fa-thumbs-o-up" style="color: #555555"></i>
+			</small>
+			
+			{{#if responseMessage}}
+				<div class="alert alert-success">{{responseMessage}}</div>
+			{{/if}}
+		</form>
+		
+	</div>
+	
+</body>
