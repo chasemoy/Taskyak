@@ -1,30 +1,24 @@
-<!--
-{{outlet}}
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">{{session.currentUser.email}}</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="active">
-                 {{#link-to 'welcome' class="btn btn-default navbar-btn" tagName='button'}} Home {{/link-to}}
+<nav class="navbar navbar-expand-md navbar-light mainNav">
+	<a class = ""> {{session.currentUser.email }}</a>
+	<button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon togglerColor">   
+		</span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class = "nav navbar-nav ml-auto navbar-right">
+            <li class="nav-item">
+				{{#link-to 'welcome' class="nav-link navButton" tagName='anchor'}}Welcome{{/link-to}}
             </li>
-            <li>
-                <a href="#">About</a>
+            <li class="nav-item">
+				{{#link-to 'about' class="nav-link navButton" tagName='anchor'}}About{{/link-to}}
+			</li>
+            <li class = "nav-item">
+                {{#link-to 'taskforminput' class="nav-link navButton" tagName='anchor'}}Task Manager{{/link-to}}
             </li>
-            <li>
-                {{#link-to 'taskforminput' class="btn btn-default navbar-btn" tagName='button'}} Task Manager {{/link-to}}            
-                </li>
-            <li>
-                <a href="#">Courses</a>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-
-                    <button class='btn btn-default navbar-btn' {{action 'signOut'}}>Sign Out</button>
+			<li class = "nav-item">
+                <a class='navButton nav-link' tagName='button' {{action 'signOut'}}>Sign Out</a>
             </li>
         </ul>
-    </div>
+	</div>  
 </nav>
--->

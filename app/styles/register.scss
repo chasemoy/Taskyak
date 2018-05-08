@@ -1,26 +1,23 @@
-.registerNav {
-	background-color: #555555 !important;
-	border-color: transparent;
-	color: white;
-	text-color: white;
-}
-
-.registerNavButton {
-	color: white;
-}
-
-.registerNavButton:hover {
-	color: white;
-}
-
-	
 #registerForm {
 	padding: 100px 0px;
 	width: 70%;
 	margin: 0 auto;
 }
 
-#register, #register:active, #register:visited {
+#registerInput {
+	width: 100%;
+	display: inline-block;
+	border: none;
+	background: #eeeeee;
+}
+	
+#registerInput:focus {
+	background-color: #dddddd;
+	outline: none;
+	color: black;
+}
+	
+#registerButton, #registerButton:active, #registerButton:visited {
 	background-color: #555555;
 	color: white;
 	border: 2px solid #555555;
@@ -42,24 +39,11 @@
     -webkit-box-align: center;
 }
 	
-#register:hover {
+#registerButton:hover {
 	background-color: white; 
 	color: #555555; 
 	border: 2px solid #555555;
 	cursor: pointer;
-}
-	
-input[type=text], input[type=email], input[type=password] {
-	width: 100%;
-	display: inline-block;
-	border: none;
-	background: #eeeeee;
-}
-	
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
-	background-color: #dddddd;
-	outline: none;
-	color: black;
 }
 	
 @media only screen and (max-width: 768px) {
