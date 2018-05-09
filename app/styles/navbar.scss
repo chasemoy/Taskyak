@@ -50,15 +50,19 @@
 // Main Navbar
 
 .mainNav {
-	background-color: #eeeeee;
+	background-color: #555555;
 	border-bottom: 5px solid black;
+}
+
+h6 {
+	color: white;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color:  #666666; 
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
     color: #cc0000;
 }
 
