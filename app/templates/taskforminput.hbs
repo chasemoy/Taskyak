@@ -1,24 +1,6 @@
-
-  <h2 class="task-header">Create A Task</h2>
-
-    <!--
-    <ul class="post-publish">
-        <li>
-            {{input value=number placeholder="Number"}}
-            {{input value=title placeholder="Title"}}
-        </li>
-        <li>
-            {{input value=date placeholder="Date"}}
-            {{textarea value=body placeholder="Body"}}
-
-        </li>
-        <li>
-            <button {{action 'publishTask'}}>Publish</button>
-        </li>
-    </ul>
-    -->
-
-    <form class="effect2">
+<div class = "container taskform">
+	<h2 class="task-header" style = "text-align: center">Create A Task</h2>
+	<form class="effect2">
       <div class="form-group">
           <label for="task number"> Task Number: </label>
           {{input value=number placeholder="Number" class="form-control"}}
@@ -40,3 +22,23 @@
 
         <button type="submit" class="btn btn-primary"{{action 'publishTask'}}>Submit</button>
     </form>
+</div>
+
+
+
+ <!--
+    <ul class="post-publish">
+        <li>
+            {{input value=number placeholder="Number"}}
+            {{input value=title placeholder="Title"}}
+        </li>
+        <li>
+            {{input value=date placeholder="Date"}}
+            {{textarea value=body placeholder="Body"}}
+
+        </li>
+        <li>
+            <button {{action 'publishTask'}}>Publish</button>
+        </li>
+    </ul>
+ -->
