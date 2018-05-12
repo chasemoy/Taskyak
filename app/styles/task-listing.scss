@@ -1,0 +1,34 @@
+.tasklist {
+	border: 0px solid black;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 70%;
+}
+
+.taskHeader {
+	margin-bottom: 30px;
+}
+
+.panel {
+	border: 2px solid #555555;
+	margin-bottom: 50px;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-title {
+	width: 100%;
+	background-color: #555555;
+	color: #ffffff;
+}
+
+.panel-body {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.panel-body .btn  {
+	margin-top: 20px;
+}
