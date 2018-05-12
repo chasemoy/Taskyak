@@ -1,5 +1,4 @@
-  <h1 class="task-header" style="height:30px">Your Tasks Portfolio</h1>
-    {{partial 'task-listing'}}
-          {{#each model as |taskforminput|}}
-                  {{task-object object=taskforminput}}
-          {{/each}}
+{{partial 'task-listing'}}
+	{{#each model as |taskforminput|}}
+		{{task-object object=taskforminput}}
+{{/each}}
