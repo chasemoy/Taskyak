@@ -1,3 +1,4 @@
+<!-- 
 <div class="miles-row">
   {{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp pull-right'}}
     {{#each model key ="userId" as |taskforminput|}}
@@ -15,4 +16,60 @@
       </div>
      {{/each}}
   {{/easy-dropdown}}
-  </div>
+</div>
+-->
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+	<div class="text-center">
+		<h2>Pricing</h2>
+		<h4>Choose a payment plan that works for you</h4>
+	</div>
+  
+	{{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp'}}
+	{{#each model key ="userId" as |taskforminput|}}
+
+	<div class="row">
+		<div class="col-sm-4 col-xs-12">
+			<div class="panel panel-default text-center">
+				<div class="panel-heading">
+					<h1> Task {{taskforminput.number}}: </h1> 
+				</div>
+			
+				<div class="panel-body">
+					<div><b> Title:</b> {{taskforminput.title}} </div>
+					<div><b>Finish Date: </b>{{taskforminput.date}}</div>
+				</div>
+			
+				<div class="panel-footer">
+					<div><b>Task Description:</b></div>
+					<h6 style = "color: black;">{{taskforminput.body}}</h6>
+					<button class="btn btn-lg">Sign Up</button>
+				</div>
+			</div>      
+		</div>  
+	
+		<div class="col-sm-4 col-xs-12">
+			<div class="panel panel-default text-center">
+				<div class="panel-heading">
+					<h1>Title Text</h1>
+				</div>
+			
+				<div class="panel-body">
+					<p><strong>yoyoyo50</strong> Lorem</p>
+					
+				</div>
+			
+				<div class="panel-footer">
+					<h3>it's 5:33 a.m. rn</h3>
+					<h4>ewwwwwwwwwwwwwwww</h4>
+					<button class="btn btn-lg">Sleep Soon</button>
+				</div>
+			</div>      
+		</div>   
+	
+	</div>
+	
+  {{/each}}
+  {{/easy-dropdown}}
+</div>
