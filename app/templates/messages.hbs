@@ -1,0 +1,25 @@
+    <div style= "text-align: center">
+    <div class="form-group">
+        <h2 class="task-header" style="text-align: center">Message Center</h2>
+        {{input type="text" placeholder="Regarding" value=name class="name-input"}} 
+        {{input type="text" placeholder="Message" value=body class="msg-input"}}
+        <button class="btn btn-primary btn-md btn-block" {{action 'publishMessage'}}>Send</button>
+    </div>
+    {{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp pull-center'}}
+    <section>
+        {{#each model as | messageinput|}}
+        <div class="dropdown-toggle clickable">
+            <div class="message">
+                <b>Regarding: {{messageinput.name}}</b>
+                <br /> {{messageinput.body}}</div>
+        </div>
+        <br />
+        <div class="dropdown-details hide">
+            <button class="btn btn-danger" {{action "destroyMessage" messageinput}}>Delete</button>
+        </div>
+        {{/each}}
+    </section>
+    {{/easy-dropdown}}
+    </div>
+
+{{outlet}}

@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('taskforminput');
   this.route('about');
   this.route('task-listing');
+  this.route('messages');
 });
 
 export default Router;

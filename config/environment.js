@@ -7,12 +7,13 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-		apiKey: "AIzaSyDzrDyHiGyFY4yFiwLPo_Thqe0rNJ3Ojxs",
-		authDomain: "csufproject-6db49.firebaseapp.com",
-		databaseURL: "https://csufproject-6db49.firebaseio.com",
-		projectId: "csufproject-6db49",
-		storageBucket: "csufproject-6db49.appspot.com",
-		messagingSenderId: "533847108839"
+		  apiKey: "AIzaSyCuh-eW7fNwdHPR3WFHLqAHddmwr7oggxo",
+		    authDomain: "csufprojec.firebaseapp.com",
+		    databaseURL: "https://csufprojec.firebaseio.com",
+		    projectId: "csufprojec",
+		    storageBucket: "csufprojec.appspot.com",
+		    messagingSenderId: "182249426195"
+
     },
     torii: { sessionServiceName: 'session' },
     EmberENV: {
