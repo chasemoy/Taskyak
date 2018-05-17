@@ -232,7 +232,7 @@ Then simply download a zip, or..
     # Contribute to Taskyak!
     ## Any donations make a huge difference, and are greatly appreciated!
     
-    [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)]( https://PayPal.Me/MilesMcCloskey/100000)
+    [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)]( https://PayPal.Me/MilesMcCloskey/10000)
     
     [![Donate](https://img.shields.io/badge/Donate-BTC-yellow.svg)]( https://commerce.coinbase.com/checkout/c163eaa2-70c2-479c-ae13-89f60d7fa0ff)
     
