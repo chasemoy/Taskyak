@@ -1,11 +1,50 @@
 # taskyak
 This application is designed to use emberjs and a firebase database to create and manage various tasks with a pinterest like layout
+
+## Our other Repo's for Taskyak!
+![David's Repo](https://github.com/dmoreno757/project2-473-testing2)
+![Raza's Repo](https://github.com/Razat94/CPSC473P2)
+
+
 ## Dependencies
 ![npm](https://img.shields.io/npm/v/npm.svg)
 ![node (scoped with tag, custom registry)](https://img.shields.io/node/v/@stdlib/stdlib/latest.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)
 ![Bower](https://img.shields.io/bower/v/bootstrap.svg)
-
-
+```
+        bootstrap": "^4.1.1
+        bootstrap-sass": "^3.3.7
+        broccoli-asset-rev": "^2.4.5
+        broccoli-merge-trees": "^3.0.0
+        ember-ajax": "^3.0.0
+        ember-bootstrap": "^1.2.2
+        ember-cli": "^3.1.4",
+        ember-cli-app-version": "^3.0.0
+        ember-cli-babel": "^6.6.0
+        ember-cli-bootstrap-4": "^0.5.9
+        ember-cli-bootstrap-sassy": "^0.5.8
+        ember-cli-dependency-checker": "^2.0.0
+        ember-cli-eslint": "^4.2.1
+        ember-cli-htmlbars": "^2.0.1
+        ember-cli-htmlbars-inline-precompile": "^1.0.0
+        ember-cli-inject-live-reload": "^1.4.1
+        ember-cli-qunit": "^4.1.1
+        ember-cli-sass": "^7.1.7
+        ember-cli-shims": "^1.2.0
+        ember-cli-sri": "^2.1.0
+        ember-cli-uglify": "^2.0.0
+        ember-data": "~3.1.0
+        ember-export-application-global": "^2.0.0
+        ember-load-initializers": "^1.0.0
+        ember-maybe-import-regenerator": "^0.1.6
+        ember-resolver": "^4.0.0
+        ember-source": "~3.1.0
+        ember-welcome-page": "^3.0.0
+        emberfire": "^2.0.10
+        eslint-plugin-ember": "^5.0.0
+        loader.js": "^4.2.3
+        popper.js": "^1.14.3
+        torii": "^0.10.1
+```
 ## Prerequisites
 You will need the following things properly installed on your computer.
 
