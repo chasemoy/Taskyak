@@ -1,5 +1,5 @@
 # taskyak
-This application is designed to use emberjs and a firebase database to create and manage various tasks with a pinterest like layout
+This application is designed to use emberjs and a firebase database to create and manage various tasks 
 
 ## Our other Repo's for Taskyak!
 ![David's Repo](https://github.com/dmoreno757/project2-473-testing2)
