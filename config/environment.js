@@ -7,15 +7,18 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-		  apiKey: "AIzaSyCuh-eW7fNwdHPR3WFHLqAHddmwr7oggxo",
-		    authDomain: "csufprojec.firebaseapp.com",
-		    databaseURL: "https://csufprojec.firebaseio.com",
-		    projectId: "csufprojec",
-		    storageBucket: "csufprojec.appspot.com",
-		    messagingSenderId: "182249426195"
+      apiKey: "AIzaSyDzrDyHiGyFY4yFiwLPo_Thqe0rNJ3Ojxs",
+      authDomain: "csufproject-6db49.firebaseapp.com",
+      databaseURL: "https://csufproject-6db49.firebaseio.com/",
+      projectId: "csufproject-6db49",
+      storageBucket: "csufproject-6db49.appspot.com",
+      messagingSenderId: "533847108839"
+
 
     },
-    torii: { sessionServiceName: 'session' },
+    torii: {
+      sessionServiceName: 'session'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -35,10 +38,10 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-     ENV.APP.LOG_ACTIVE_GENERATION = true;
-     ENV.APP.LOG_TRANSITIONS = true;
-     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_TRANSITIONS = true;
+    ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {

@@ -16,7 +16,7 @@ export default Controller.extend({
         name: '',
         body: ''
       });
-    }
+    },
     // deleteMessage: function(messageinput) {
     // var message = this.store.find('messageinput', messageinput, {
     //     //this gets the info from the form fields with this value
@@ -30,6 +30,10 @@ export default Controller.extend({
     //         messageinput.deleteRecord();
     //         messageinput.save();
     //       }
+    deleteMessage(messageinput){
+      messageinput.deleteRecord();
+      messageinput.destroyRecord();
+      messageinput.save();
+    }
   }
 });
-

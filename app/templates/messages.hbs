@@ -1,25 +1,38 @@
-    <div style= "text-align: center">
-    <div class="form-group">
-        <h2 class="task-header" style="text-align: center">Message Center</h2>
-        {{input type="text" placeholder="Regarding" value=name class="name-input"}} 
-        {{input type="text" placeholder="Message" value=body class="msg-input"}}
-        <button class="btn btn-primary btn-md btn-block" {{action 'publishMessage'}}>Send</button>
+<div style="text-align: center" class="container">
+  <h2 class="text-center">Message Center</h2>
+  <div class="row form-group">
+    <div class="col-md-12">
+      {{input  class="name-input form-control" type="text" placeholder="Regarding" value=name}}
     </div>
-    {{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp pull-center'}}
-    <section>
-        {{#each model as | messageinput|}}
-        <div class="dropdown-toggle clickable">
-            <div class="message">
-                <b>Regarding: {{messageinput.name}}</b>
-                <br /> {{messageinput.body}}</div>
-        </div>
-        <br />
-        <div class="dropdown-details hide">
-            <button class="btn btn-danger" {{action "destroyMessage" messageinput}}>Delete</button>
-        </div>
-        {{/each}}
-    </section>
-    {{/easy-dropdown}}
+  </div>
+
+  {{textarea class="msg-input form-control" type="text" placeholder="Message" value=body}}
+
+  <div class="row">
+    <div class="col-sm-12 form-group">
+      <button class="btn btn-default pull-right" type="submit" {{action 'publishMessage'}}>Send</button>
     </div>
+  </div>
+</div>
+
+{{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp pull-center' }}
+  <div class="container" style="text-align: center">
+    {{#each model as | messageinput|}}
+      <div class="row panel">
+        <div class="panel-title text-center">
+          <h2> Regarding: {{messageinput.name}} </h2>
+        </div>
+
+        <div class="col-sm-12 text-center">
+          <div class="panel-body">
+            <div><strong>Message: </strong>{{messageinput.body}}
+              <button class="btn btn-danger" {{action "deleteMessage" messageinput}}>Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+</div>
+{{/easy-dropdown}}
 
 {{outlet}}
