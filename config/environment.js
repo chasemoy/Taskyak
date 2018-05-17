@@ -7,12 +7,12 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-      apiKey: "AIzaSyDzrDyHiGyFY4yFiwLPo_Thqe0rNJ3Ojxs",
-      authDomain: "csufproject-6db49.firebaseapp.com",
-      databaseURL: "https://csufproject-6db49.firebaseio.com/",
-      projectId: "csufproject-6db49",
-      storageBucket: "csufproject-6db49.appspot.com",
-      messagingSenderId: "533847108839"
+    apiKey: "AIzaSyDVT8TDcFDZaf8oSWYVI8hbXXQeZbdup3I",
+      authDomain: "taskmanager-8f702.firebaseapp.com",
+      databaseURL: "https://taskmanager-8f702.firebaseio.com",
+      projectId: "taskmanager-8f702",
+      storageBucket: "taskmanager-8f702.appspot.com",
+      messagingSenderId: "1076003485828"
 
 
     },
